@@ -28,6 +28,6 @@ AddEventHandler('giveanalizedblood', function(data)
     local xPlayer = ESX.GetPlayerFromId(source)
     data['AnalizedBy'] = xPlayer.variables.firstName.. ' '..xPlayer.variables.lastName
     data['Date'] = os.date("%c")
-    xPlayer.addInventoryItem("analizakrvi", 1, data)
-    xPlayer.removeInventoryItem("krv", 1)
+    xPlayer.addInventoryItem(GlobalState.AnalizedBlood, 1, data)
+    xPlayer.removeInventoryItem(GlobalState.blood, 1)
 end)
