@@ -21,7 +21,8 @@ You also need to add these 2 items in ox_inventory/data/items.lua
   stack = true,
   close = true,
   client = {
-    event = "open:evidence"
+    --event = "open:evidence" -- if you use older version then uncomment this and comment export
+    export = "open:evidence"
   },
 },
 ```
