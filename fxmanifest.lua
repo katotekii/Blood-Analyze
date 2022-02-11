@@ -8,6 +8,7 @@ ui_page 'html/form.html'
 lua54 'yes'
 
 shared_script '@es_extended/imports.lua'
+shared_script 'config.lua'
 
 files {
 	'html/form.html',
