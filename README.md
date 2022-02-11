@@ -10,7 +10,7 @@ If you don't want these 2 scripts you'll need to edit script
 You also need to add these 2 items in ox_inventory/data/items.lua
 ```lua
 ['blood'] = { -- name must be the same as in server side
-  label = 'Krv',
+  label = 'Blood',
   weight = 40,
   stack = true,
   close = true,
